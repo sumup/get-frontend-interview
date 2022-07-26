@@ -17,9 +17,10 @@ interface GetOnboardingsRequest extends NextApiRequest {
 
 interface OnboardingResponse {
   id: string;
-  merchant_code: string;
+  merchant_name: string;
+  merchant_last_name: string;
   acquirer: string;
-  status: number;
+  status: boolean;
   last_response: string;
 }
 
@@ -36,7 +37,8 @@ const handler = async (req: GetOnboardingsRequest, res: NextApiResponse) => {
       const onboardings = data.map((onb) => {
         const onboarding: Onboarding = {
           id: onb.id,
-          merchantCode: onb.merchant_code,
+          merchantName: onb.merchant_name,
+          merchantLastName: onb.merchant_last_name,
           acquirer: onb.acquirer,
           status: onb.status,
           lastResponse: onb.last_response,

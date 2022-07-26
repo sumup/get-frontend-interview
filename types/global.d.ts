@@ -1,7 +1,8 @@
 type Onboarding = {
-  id: srtring;
-  merchantCode: string;
+  id: string;
+  merchantName: string;
+  merchantLastName: string;
   acquirer: string;
-  status: number;
+  status: boolean;
   lastResponse: string;
 };
