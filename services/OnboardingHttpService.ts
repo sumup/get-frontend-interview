@@ -5,4 +5,8 @@ const GetAll = async (): Promise<Onboarding[]> => {
   return data;
 };
 
-export default { GetAll };
+const OnboardingHttpService = {
+  GetAll,
+};
+
+export default OnboardingHttpService;

@@ -6,11 +6,9 @@ const Home: React.FC = () => {
 
   return (
     <div>
-      <Heading margin="25px">
-        <Heading>Onboardings List</Heading>
-      </Heading>
+      <Heading margin="25px">Onboardings List</Heading>
       {onboardings.length ? (
-        <></>
+        <div>This should be a table</div>
       ) : (
         <>
           <Alert status="warning">
