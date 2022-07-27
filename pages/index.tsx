@@ -1,12 +1,15 @@
 import { Alert, AlertIcon, Heading } from '@chakra-ui/react';
 import React from 'react';
 
+import Filters from '../components/Filters';
+
 const Home: React.FC = () => {
   const onboardings = [];
 
   return (
     <div>
       <Heading margin="25px">Onboardings List</Heading>
+      <Filters />
       {onboardings.length ? (
         <div>This should be a table</div>
       ) : (
