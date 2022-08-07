@@ -2,6 +2,7 @@ import { Alert, AlertIcon, Heading } from '@chakra-ui/react';
 import React from 'react';
 
 import Filters from '../components/Filters';
+import OnboardingsService from '../services/OnboardingHttpService';
 
 const Home: React.FC = () => {
   const onboardings = [];
