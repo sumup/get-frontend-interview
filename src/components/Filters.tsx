@@ -1,7 +1,6 @@
-import { Box, Flex, Heading, Select, Spacer } from '@chakra-ui/react';
-import React from 'react';
+import React from "react";
 
-const Filters: React.FC = () => {
+const Filters = () => {
   const onChangeAcquirer = (e: React.ChangeEvent<HTMLSelectElement>) => {
     console.log(e.target.value);
   };
@@ -9,32 +8,31 @@ const Filters: React.FC = () => {
     console.log(e.target.value);
   };
   return (
-    <Box borderWidth="1px" borderRadius="lg" padding="10px">
-      <Heading as="h2" size="md">
+    <div>
+      <h3>
         Filters
-      </Heading>
-      <Flex>
-        <Box w="200px">
+      </h3>
+      <div>
+        <div>
           <label>Acquirer</label>
-          <Select onChange={onChangeAcquirer}>
+          <select onChange={onChangeAcquirer}>
             <option value="">All</option>
             <option value="West">West</option>
             <option value="North">North</option>
             <option value="East">East</option>
             <option value="South">South</option>
-          </Select>
-        </Box>
-        <Spacer />
-        <Box w="200px">
+          </select>
+        </div>
+        <>
           <label>Status</label>
-          <Select onChange={onChangeStatus}>
+          <select onChange={onChangeStatus}>
             <option value="">All</option>
             <option value="success">Success</option>
             <option value="failed">Failed</option>
-          </Select>
-        </Box>
-      </Flex>
-    </Box>
+          </select>
+        </>
+      </div>
+    </div>
   );
 };
 
