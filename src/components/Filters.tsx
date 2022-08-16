@@ -1,4 +1,5 @@
 import React from "react";
+import './Filters.css';
 
 const Filters = () => {
   const onChangeAcquirer = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -14,7 +15,7 @@ const Filters = () => {
       </h3>
       <div>
         <div>
-          <label>Acquirer</label>
+          <label className="filter-title">Acquirer</label>
           <select onChange={onChangeAcquirer}>
             <option value="">All</option>
             <option value="West">West</option>
@@ -24,7 +25,7 @@ const Filters = () => {
           </select>
         </div>
         <>
-          <label>Status</label>
+          <label className="filter-title">Status</label>
           <select onChange={onChangeStatus}>
             <option value="">All</option>
             <option value="success">Success</option>

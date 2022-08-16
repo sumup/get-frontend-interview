@@ -5,3 +5,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+
+.filter-title {
+  padding: 1.5em;
+}

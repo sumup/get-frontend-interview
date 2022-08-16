@@ -12,9 +12,9 @@ const App: React.FC = () => {
             {onboardings.length ? (
                 <div>This should be a table</div>
             ) : (
-                <>
+                <div>
                     No onboardings found
-                </>
+                </div>
             )}
         </div>
     );
