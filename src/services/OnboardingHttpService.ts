@@ -45,4 +45,4 @@ const GetAll = async (): Promise<Onboarding[]> => {
         });
 };
 
-export { GetAll as GetAllOnboardings };
+export { type Onboarding, GetAll as GetAllOnboardings };
